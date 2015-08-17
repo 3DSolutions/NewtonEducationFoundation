@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "author": {
+    "name": "James Parsons",
+    "email": "jamesmp98@gmail.com"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
