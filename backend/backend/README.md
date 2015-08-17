@@ -17,4 +17,5 @@
 - Not sure if I should make it pure REST.
 - Not sure where to process payments
 
+I currently have the database set up for MongoDB. If that needs to be changed, it can be done.
 
