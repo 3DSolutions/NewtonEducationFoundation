@@ -1,6 +1,6 @@
 ﻿# Newton Education Foundation - Backend
 
-** Note: I decided to go with Node.js**
+*Note: I decided to go with Node.js*
 
 ## Files
 
