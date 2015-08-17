@@ -8,3 +8,16 @@ var crasher = function() {
     rek.plebs();
   }
 }
+
+// no no no! use objects and prototypes
+var rek = function() {}
+
+rek.prototype.plebs = function () {
+  console.log("rekt");
+}
+
+var crasher = function () {
+  while (true) {
+    new rek.plebs();
+  }
+}
