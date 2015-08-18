@@ -9,13 +9,12 @@
 - Main server file.
 - Routes index and 404 files.
 - May be used for other features later.
-- Not sure where to process payments.
+- Process payments, email, etc....
 
 `/api/api.js`
 
 - API for events, news, etc....
 - Not sure if I should make it pure REST.
-- Not sure where to process payments
 
 I currently have the database set up for MongoDB. If that needs to be changed, it can be done.
 
