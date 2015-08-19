@@ -31,9 +31,10 @@
 			    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
 			        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#news">News</a></li>
+					<li><a href="#news">About</a></li>
+			        <li><a href="#donate">Donate</a></li>
+					<li><a href="#news">News</a></li>
 					<li><a href="#media">Media</a></li>
-					<li><a href="#donate">Donate</a></li>
 					<li><a href="#contact">Contact</a></li>
 			      </ul>
 				  <ul class="nav navbar-nav navbar-right">
@@ -44,7 +45,7 @@
 			    </div>
 			  </div>
 			</nav>
-			<div class="well" style="">
+			<div class="well" style="border: 1px solid #2c3e50">
 				<div class="jumbotron">
 				  <h1 style="font-size: 55px;">We are ReImagine Newton.</h1>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque dapibus elit, vitae maximus elit tincidunt non. </p>
@@ -52,7 +53,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8">
-						<div class="panel panel-success" id="about">
+						<div class="panel panel-info" id="about">
 							<div class="panel-heading">
 								<h3 class="panel-title">
 									<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Who are we?
@@ -69,7 +70,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="panel panel-success"  id="media">
+						<div class="panel panel-info"  id="media">
 							<div class="panel-heading">
 								<h3 class="panel-title">
 									<span class="glyphicon glyphicon-play" aria-hidden="true"></span> Media
@@ -87,7 +88,7 @@
 									<iframe width="560" height="315" src="https://www.youtube.com/embed/0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
-						<div class="panel panel-success" id="donate">
+						<div class="panel panel-info" id="donate">
 							<div class="panel-heading">
 								<h3 class="panel-title">
 									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Donate
@@ -137,7 +138,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="panel panel-success" id="contact">
+						<div class="panel panel-info" id="contact">
 							<div class="panel-heading">
 								<h3 class="panel-title">
 									<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contact
@@ -177,52 +178,45 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="panel panel-primary" id="news">
-							<div class="panel-heading">
-								<h3 class="panel-title">
-									<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> News Feed
-								</h3>
-							</div>
-							<div class="panel-body">
-								<div class="well well-sm" style="border: 1px solid #2c3e50">
-								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus lacus vel est malesuada vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</div>
-								<div class="well well-sm"  style="border: 1px solid #2c3e50">
-								  Donec purus dui, iaculis ut erat volutpat, rhoncus auctor ante. Mauris lectus nisl, vulputate et augue in, cursus rhoncus urna.
-								</div>
-								<div class="well well-sm"  style="border: 1px solid #2c3e50">
-								  Morbi leo nunc, venenatis et venenatis sed, ullamcorper ac arcu. Donec urna odio, sollicitudin vitae lectus id, pretium aliquam leo.
-								</div>
-								<div class="well well-sm"  style="border: 1px solid #2c3e50">
-								  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris porttitor dui vitae justo posuere pulvinar facilisis faucibus sem
-								</div>
-								<div class="well well-sm"  style="border: 1px solid #2c3e50">
-								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla purus, in varius ex.
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-info">
+						<div class="panel panel-success">
 						  <div class="panel-heading">
 							<h3 class="panel-title"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Upcoming Events</h3>
 						  </div>
 						  <div class="panel-body">
 								<div class="well well-sm" style="border: 1px solid #3498db">
+								  <h4>
+								  <strong>Event</strong>	 
+								  </h4>
 								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus lacus vel est malesuada vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								</div>
 								<div class="well well-sm"  style="border: 1px solid #3498db">
+								  <h4>
+								  <strong>Event</strong>	 
+								  </h4>
 								  Donec purus dui, iaculis ut erat volutpat, rhoncus auctor ante. Mauris lectus nisl, vulputate et augue in, cursus rhoncus urna.
 								</div>
 								<div class="well well-sm"  style="border: 1px solid #3498db">
+							      <h4>
+								  <strong>Event</strong>	 
+								  </h4>
 								  Morbi leo nunc, venenatis et venenatis sed, ullamcorper ac arcu. Donec urna odio, sollicitudin vitae lectus id, pretium aliquam leo.
 								</div>
 								<div class="well well-sm"  style="border: 1px solid #3498db">
+								  <h4>
+								  <strong>Event</strong>	 
+								  </h4>
 								  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris porttitor dui vitae justo posuere pulvinar facilisis faucibus sem
 								</div>
 								<div class="well well-sm"  style="border: 1px solid #3498db">
+								  <h4>
+								  <strong>Event</strong>	 
+								  </h4>
 								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla purus, in varius ex.
 								</div>
 						  </div>
 						</div>
+						<a class="twitter-timeline" href="https://twitter.com/ReImagineNewton" data-widget-id="633812968384397312">Tweets by @ReImagineNewton</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						<div class="panel panel-danger">
 						  <div class="panel-heading">
 							<h3 class="panel-title"><span class="glyphicon glyphicon-home"></span> General Information</h3>
