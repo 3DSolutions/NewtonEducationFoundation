@@ -1,0 +1,12 @@
+body {
+	background: url('../assets/background.png')
+}
+
+.navbar {
+	border: 4px solid #18bc9c;
+}
+
+.jumbotron {
+	border: 3px solid #18bc9c;
+	background-color: ;
+}
