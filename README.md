@@ -1,5 +1,52 @@
-# Newton Education Foundation Website
+﻿# Newton Education Foundation
 
-This repo contains the source for the site soon-to-be at http://thenewtoneducationfoundation.org
+This repository contains the source code for the site soon to be at: http://www.thenewtoneducationfoundation.org
 
-*For an overview of changes in the backend, check [here.](https://github.com/PHPApple/newtonef/blob/master/backend/backend/README.md)*
+## Notes
+
+- Currently set up for a MongoDB database.
+- Can run standalone, but may be proxied behind NGINX or something.
+- You can run with `node server.js`, or, use gulp like `gulp run`.
+- This is  still a work in progress, no idea what I want to use  for payments: Stripe or Braintree.
+
+## Specs
+
+### Backend
+
+#### Files 
+
+`server.js`
+
+- Main server file. Handles serving the index, handling non-resource actiosn such as emails, donations, etc...
+
+`gulpfile.js`
+
+- The projects "gulpfile"
+
+`api/events-api.js`
+
+- Web service for events.
+- Interfaces with database.
+- CRUD service.
+- **Not** pure REST.
+
+`db/db.js`
+
+- Handles connection to the database.
+
+`db/schemas.js`
+
+- Mongoose schemas for database.
+
+`db/models.js`
+
+- Mongoose models for database
+
+`test/tests.js`
+
+- Unit tests written in Mocha.
+- Use `gulp test` to run.
+
+### Frontend
+
+*In progress...*
