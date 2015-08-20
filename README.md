@@ -7,7 +7,7 @@ This repository contains the source code for the site soon to be at: http://www.
 - Currently set up for a MongoDB database.
 - Can run standalone, but may be proxied behind NGINX or something.
 - You can run with `node server.js`, or, use gulp like `gulp run`.
-- This is  still a work in progress, no idea what I want to use  for payments: Stripe or Braintree.
+- Uses Braintree for payments.
 
 ## Specs
 
@@ -29,6 +29,11 @@ This repository contains the source code for the site soon to be at: http://www.
 - Interfaces with database.
 - CRUD service.
 - **Not** pure REST.
+
+`api/payments.js`
+
+- Handles payments through the Braintree API.
+
 
 `db/db.js`
 
