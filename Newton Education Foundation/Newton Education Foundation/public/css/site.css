@@ -1,5 +1,5 @@
 body {
-	background: url('../assets/background.png')
+	background: url('/img/background.png')
 }
 
 .navbar {
@@ -8,5 +8,5 @@ body {
 
 .jumbotron {
 	border: 3px solid #18bc9c;
-	background-color: ;
+	/* background-color: ; */
 }
