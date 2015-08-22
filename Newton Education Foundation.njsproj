@@ -32,9 +32,6 @@
   <ItemGroup>
     <Compile Include="api\events-api.js" />
     <Compile Include="api\payments.js" />
-    <Compile Include="db\db.js" />
-    <Compile Include="db\models.js" />
-    <Compile Include="db\schemas.js" />
     <Compile Include="gulpfile.js">
       <SubType>Code</SubType>
       <TestFramework>Mocha</TestFramework>
@@ -65,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="api\" />
-    <Folder Include="db\" />
     <Folder Include="public\fonts\" />
     <Folder Include="test\" />
     <Folder Include="public\" />

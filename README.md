@@ -2,12 +2,28 @@
 
 This repository contains the source code for the site soon to be at: http://www.thenewtoneducationfoundation.org
 
+## *Changes*
+
+- Merged database functionality into the API.
+
+## **TODO**
+
+- Clean up error handling.
+- Hook up payments.
+- Set up database.
+- Deploy.
+
 ## Notes
 
 - Currently set up for a MongoDB database.
 - Can run standalone, but may be proxied behind NGINX or something.
 - You can run with `node server.js`, or, use gulp like `gulp run`.
 - Uses Braintree for payments.
+
+**The following environment variable should be set on the target system.**
+
+- port
+- db_url
 
 ## Specs
 
@@ -32,20 +48,7 @@ This repository contains the source code for the site soon to be at: http://www.
 
 `api/payments.js`
 
-- Handles payments through the Braintree API.
-
-
-`db/db.js`
-
-- Handles connection to the database.
-
-`db/schemas.js`
-
-- Mongoose schemas for database.
-
-`db/models.js`
-
-- Mongoose models for database
+- Handles payments.
 
 `test/tests.js`
 
