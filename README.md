@@ -11,14 +11,16 @@ This repository contains the source code for the site soon to be at: http://www.
 - Clean up error handling.
 - Hook up payments.
 - Set up database.
-- Deploy.
+- Make the server interface nicer or proxy it.
+- Move content in the page.
+- Make it more mobile friendly.
+- ~~Deploy~~.
 
 ## Notes
 
 - Currently set up for a MongoDB database.
 - Can run standalone, but may be proxied behind NGINX or something.
 - You can run with `node server.js`, or, use gulp like `gulp run`.
-- Uses Braintree for payments.
 
 **The following environment variable should be set on the target system.**
 
@@ -29,7 +31,7 @@ This repository contains the source code for the site soon to be at: http://www.
 
 ### Backend
 
-#### Files 
+#### Files
 
 `server.js`
 
@@ -57,4 +59,16 @@ This repository contains the source code for the site soon to be at: http://www.
 
 ### Frontend
 
-*In progress...*
+#### Files
+
+`public/index.html`
+
+- The index page.
+
+`public/css/site.css`
+
+- Index specific CSS styles.
+
+`public/js/site.js`
+
+- Mainly an AJAX connector for events.
