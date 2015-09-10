@@ -1,8 +1,8 @@
 ﻿// Main server file.
 var express = require("express");
 var bodyParser = require("body-parser");
-var events = require("./api/events-api.js");
-//var payments = require("./api/payments.js");
+// var events = require("./api/events-api.js");
+// var payments = require("./api/payments.js");
 
 // Get port from environment variables or set it to 80.
 var port = process.env.port || 80;
