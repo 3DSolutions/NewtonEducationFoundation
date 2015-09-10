@@ -4,7 +4,7 @@ var mongojs = require("mongojs");
 
 var eventsAPI = express();
 
-// Database connection.
+// Database object.
 var db = {
     connection: mongojs(process.env.db_url),
     events: db.connection.collection("events")
@@ -19,12 +19,12 @@ db.connection.on("ready", function () {
 });
 
 // CRUD actions for events.
-eventsAPI.get("/events", function (req, res) { 
-    // TODO: Query for all events.
-    db.events.find(function (err, docs) {
-        res.send(docs);
-    });
-});
+eventsAPI.get("/events", function (req, res) {
+    /* TODO: pull the limt from the query (if it exists)
+     * and get that number of events. If no limit exists,
+     * get all of them.
+     */
+}
 
 eventsAPI.post("/events", function (req, res) {
     // TODO: Create new event.
