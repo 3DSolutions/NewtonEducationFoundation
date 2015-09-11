@@ -10,10 +10,11 @@ This repository contains the source code for the site soon to be at: http://www.
 
 - Clean up error handling.
 - Hook up payments.
-- Set up database.
+- Set up database. **ALMOST**
 - Make the server interface nicer or proxy it.
 - Move content in the page.
-- Make it more mobile friendly.
+- Hook up AJAX.
+- ~~Make it more mobile friendly~~.
 - ~~Deploy~~.
 
 ## Notes
