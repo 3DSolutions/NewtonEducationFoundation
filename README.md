@@ -25,8 +25,8 @@ This repository contains the source code for the site soon to be at: http://www.
 
 **The following environment variable should be set on the target system.**
 
-- port
-- db_url
+- `port`
+- `db_url`
 
 ## Specs
 
