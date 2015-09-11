@@ -4,9 +4,18 @@ var mongojs = require("mongojs");
 
 var eventsAPI = express();
 
+// Database connection properties.
+var host = process.env.db_host || "localhost";
+var port = process.env.db_port || "27017";
+var user = process.env.db_user || "";
+var password = process.env.db_pass || "";
+
+// Lets put it together.
+var connectionString = "mongodb://" + user + ":" + password + "@" + host + ":" + port;
+
 // Database object.
 var db = {
-    connection: mongojs(process.env.db_url),
+    connection: mongojs()),
     events: db.connection.collection("events")
 };
 
@@ -24,7 +33,7 @@ eventsAPI.get("/events", function (req, res) {
      * and get that number of events. If no limit exists,
      * get all of them.
      */
-}
+});
 
 eventsAPI.post("/events", function (req, res) {
     // TODO: Create new event.
