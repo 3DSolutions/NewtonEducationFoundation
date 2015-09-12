@@ -108,3 +108,10 @@ a {
 	background-color: #4a74d6;
 
 }
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}

@@ -30,11 +30,23 @@ function loadBios() {
 		url: "/api/bio",
 		method: "GET"
 	}).done(function(data){
-		// It's 2 AM. I'm tired. I'll finish it in the morning.
-		// I had the bios done already but I couldn't justify not doing it via ajax. I just have to port over the modal code to work dynamically with this JSON. 
-		console.log(data);
+		dataval = data;
+		for (var i = 0; i < data.bios.length; i++){
+			$("#biocontent").append("<h2>" + data.bios[i].name + "</h1><b2>");
+			$("#biocontent").append("<p>" + data.bios[i].bio + "</p><b2>");
+		}
+	}).fail(function(error) {
+		console.log(error);
 	});
 }
+
+/**
+	Wide modals.
+**/
+$(".modal-wide").on("show.bs.modal", function() {
+  var height = $(window).height() - 200;
+  $(this).find(".modal-body").css("max-height", height);
+});
 
 /**
 	Self-explanitory.
@@ -47,3 +59,10 @@ loadEvents();
 $(".togglebio").click(function(e){
 	loadBios();
 });
+
+/**
+	Fixes the dupe bios issue.
+**/
+$('.modal-wide').on('hidden.bs.modal', function () {
+    $("#biocontent").text("");
+})
