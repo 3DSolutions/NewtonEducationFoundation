@@ -1,12 +1,14 @@
 function loadEvents() {
     $.ajax({
-        url: "/ap/events",
+        url: "/api/events",
         method: "GET"
     }).done(function (data) {
-        var list = $.parseJSON(data);
+        var response = $.parseJSON(data);
         
-        if (list.events.length > 0) {
-            // TODO: List first five events if available.
+        if (response.events.length > 0) {
+            for(var i = 0; i < response.events.length; i++) {
+                $("#events").append("<div class='panel-body'><div class='well well-sm' style='border: 1px solid #3498db'><h4><strong>" + response.events[i].title +"</strong></h4><p>" + response.events[i].summary +"</p></div></div>");
+            }
         } else {
             // No events are currently available.
             $("#events").html("<h4><strong>No events here.</strong></h4>");

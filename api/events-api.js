@@ -7,32 +7,40 @@ var eventsAPI = express();
 // Database connection properties.
 var host = process.env.db_host || "localhost";
 var port = process.env.db_port || "27017";
-var user = process.env.db_user || "";
-var password = process.env.db_pass || "";
+var user = process.env.db_user || "admin";
+var password = process.env.db_pass || "admin";
 
 // Lets put it together.
-var connectionString = "mongodb://" + user + ":" + password + "@" + host + ":" + port;
+var connectionString = "mongodb://" + user + ":" + password + "@" + host + ":" + port + "/events";
 
 // Database object.
-var db = {
-    connection: mongojs()),
-    events: db.connection.collection("events")
-};
+var db = mongojs(connectionString, ["events"]);
 
-db.connection.on("error", function (err) {
+db.on("error", function (err) {
     console.log("Error connecting to database");
 });
 
-db.connection.on("ready", function () {
+db.on("ready", function () {
     console.log("Successfully connected to database.");
 });
 
 // CRUD actions for events.
 eventsAPI.get("/events", function (req, res) {
-    /* TODO: pull the limt from the query (if it exists)
-     * and get that number of events. If no limit exists,
-     * get all of them.
-     */
+    /*db.events.find(function (err, docs) {
+        if(!err) {
+            res.send(docs);
+        } else {
+            res.send(err);
+        }
+    });*/
+   
+    // We need a temporary response. 
+    var tempRes = {
+        events: [
+        ]
+    };
+    
+    res.send(JSON.stringify(tempRes));
 });
 
 eventsAPI.post("/events", function (req, res) {
