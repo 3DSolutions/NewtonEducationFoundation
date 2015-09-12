@@ -56,6 +56,11 @@ a {
 		height: 3em;
 	}
 	
+	.design {
+		margin-left: 2em;
+		font-size: 8pt;	
+	}
+	
 	#logo {
 		display: none;
 	}
