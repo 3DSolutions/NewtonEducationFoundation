@@ -35,7 +35,33 @@ a {
 	margin-left: 7em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 432px) {
+	.title {
+		font-size: 24px;
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 50px;
+	}
+	
+	.title-button {
+		padding-left: 20px;
+		padding-top: 10px;
+		text-align: center;
+		font-size: 12pt;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+		display: block;
+		width: 8em;
+		height: 3em;
+	}
+	
+	#logo {
+		display: none;
+	}
+}
+
+@media (min-width: 433px) and (max-width: 767px) {
 	.title {
 		margin-left: 30px;
 		margin-right: 10px;
