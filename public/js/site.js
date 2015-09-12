@@ -1,3 +1,6 @@
+/**
+	Loads in the events and puts them on the page.
+**/
 function loadEvents() {
     $.ajax({
         url: "/api/events",
@@ -19,4 +22,28 @@ function loadEvents() {
     });
 }
 
+/**
+	Simple AJAX to load the JSON object of the bios.
+**/
+function loadBios() {
+	$.ajax({
+		url: "/api/bio",
+		method: "GET"
+	}).done(function(data){
+		// It's 2 AM. I'm tired. I'll finish it in the morning.
+		// I had the bios done already but I couldn't justify not doing it via ajax. I just have to port over the modal code to work dynamically with this JSON. 
+		console.log(data);
+	});
+}
+
+/**
+	Self-explanitory.
+**/
 loadEvents();
+
+/**
+	Toggle the bio modal. 
+**/
+$(".togglebio").click(function(e){
+	loadBios();
+});

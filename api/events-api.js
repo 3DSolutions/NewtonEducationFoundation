@@ -59,4 +59,10 @@ eventsAPI.delete("/events", function (req, res) {
     // TODO: Remove event.
 });
 
+// If you want to do this differently you can.
+// Flat file storage for this is okay for now.
+eventsAPI.get("/bio", function(req, res){
+	res.sendFile(__dirname + "/data/bio.json");
+});
+
 module.exports = eventsAPI;
