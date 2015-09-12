@@ -37,6 +37,10 @@ eventsAPI.get("/events", function (req, res) {
     // We need a temporary response. 
     var tempRes = {
         events: [
+            {
+                "title": "Test Event",
+                "summary": "This is a test event. Please make these events look nice again."
+            }
         ]
     };
     
