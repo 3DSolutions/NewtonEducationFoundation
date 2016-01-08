@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 	<head>
@@ -26,18 +26,17 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="#" id="navbrand"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Newton Education Foundation</a>
-			    </div>
+					<a class="navbar-brand" href="#" id="navbrand" style="float: left;"><img src="img/nav.png" class="img-responsive visible-xl visible-lg visible-md" aria-hidden="true" style="float: left; margin-right: 1em;"><span class='visible-xl visible-md visible-lg' style="float: left"> Newton Education Foundation</span><span class="glyphicon-apple visible-xs visible-sm" style="font-size: 17px">Newton Ed. Foundation</div></a>
+			    </span>
 			    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
-			        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
 					<li><a href="#about">About</a></li>
-			        <!--<li><a href="#donate">Donate</a></li>-->
+			    <li><a href="#donate">Donate</a></li>
 					<li><a href="#events">Upcoming Events</a></li>
 					<li><a href="#grant">Grant Resources</a></li>
 					<li><a href="#contact">Contact</a></li>
 			      </ul>
-				  <ul class="nav navbar-nav navbar-right">
+				  <ul class="nav navbar-nav navbar-right visible-lg visible-xs visible-xl">
 					  <li><a href="https://www.facebook.com/ReimagineNewton" class="fa fa-facebook fa-lg"></a></li>
 					  <li><a href="https://twitter.com/ReImagineNewton" class="fa fa-twitter fa-lg"></a></li>
 					  <li><a href="#contact" class="fa fa-envelope fa-lg"></a></li>
@@ -46,10 +45,10 @@
 			  </div>
 			</nav>
 			<div class="well" style="border: 1px solid #2c3e50">
-				<div class="jumbotron">
-				  <h1 class="title">We are The Newton Education Foundation.</h1>
-				  <p><a href="#about" class="btn btn-primary btn-lg title-button">Learn more</a>    
-				  <a class="btn btn-primary btn-lg title-button togglebio" data-toggle="modal" href="#biomodal">Our Team</a></p>
+				<div class="jumbotron" align="center">
+				  <img src="/img/nef.png" class="img-responsive visible-xl visible-lg visible-md visible-sm"><img src="/img/nef-alt.png" class="img-responsive visible-xs">
+				  <a href="#about" class="btn btn-primary btn-lg title-button">Learn more</a> 
+				  <a class="btn btn-primary btn-lg title-button togglebio" data-toggle="modal" href="#biomodal">Our Team</a>
 				</div>
 				<div class="row">
 					<div class="col-md-8">
@@ -60,12 +59,8 @@
 								</h3>
 							</div>
 							<div class="panel-body">
-								<img id="logo" src="/img/logo.png"><br>
-								<h2 id="sub">
-									Here's who we are, and here is what we do.
-								</h2>
 								<p>
-									The Newton Education Foundation is working to create a culture of support for education in Newton County, GA.
+								<h3>The Newton Education Foundation</h3> is working to create a culture of support for education in Newton County, GA.
 									Our mission is straight-forward: We're building a private fund for public education. But our vision is big: We want to create a better community.
 									We believe that a great community values great education, and that great education inspires a great community.
 								</p>
@@ -75,33 +70,106 @@
 						<div class="panel panel-info"  id="grant">
 							<div class="panel-heading">
 								<h3 class="panel-title">
-									<span class="glyphicon glyphicon-education" aria-hidden="true"></span> Grant Resources
+									<span class="glyphicon glyphicon-education" aria-hidden="true"></span> Grant Resources - <a style="float: right;" class="res-link" href="./doc/rubric.doc">Rubric</a>
 								</h3>
 							</div>
 							<div class="panel-body">
-									<p>If you need the application or rubric for our grant cycle, download them here:</p>
-									<blockquote>
-									  <p>Grant Application</p>
-									  <small>This is our grant application which you may fill out and turn into us during the grant cycle.</small>
-									  <small><a href="/doc/application.doc" download>Download</a></small>
-									</blockquote>
-									<blockquote>
-									  <p>Grant Rubric</p>
-									  <small>This rubric gives guidline son how you sohlud develop your grant project.</small>
-									  <small><a href="/doc/rubric.doc" download>Download</a></small>
-									</blockquote>
-									<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe>-->
+								<form class="form-horizontal" action="//formspree.io/thenewtoneducationfoundation@gmail.com" method="POST">
+									<fieldset>
+
+									<!-- Form Name -->
+									<legend>Grant Application</legend>
+								    <p style="margin-bottom: 1em;">Grant Cycle begins January 2016.</p>
+									<!-- Text input-->
+									<div class="form-group">
+  										<label class="col-sm-3 control-label" for="teacher">Teacher Name</label>  
+  										<div class="col-lg-8">
+							  				<input id="teacher" name="teacher" placeholder="Teacher Name" class="form-control input-md" required="" type="text">
+  										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+  										<label class="col-sm-3 control-label" for="school">School</label>  
+  										<div class="col-lg-8">
+ 											 <input id="school" name="school" placeholder="School" class="form-control input-md" required="" type="text">
+    
+									    </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+			  							<label class="col-sm-3 control-label" for="email">Teacher Email</label>  
+				  						<div class="col-lg-8">
+  											<input id="email" name="email" placeholder="Email" class="form-control input-md" required="" type="text">
+    
+  										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+  										<label class="col-sm-3 control-label" for="phone">Teacher Phone Number</label>  
+  										<div class="col-lg-8">
+  											<input id="phone" name="phone" placeholder="Phone" class="form-control input-md" required="" type="text">
+    
+  										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+  										<label class="col-sm-3 control-label" for="project">Project Title</label>  
+  										<div class="col-lg-8">
+											<input id="project" name="project" placeholder="Project Title" class="form-control input-md" required="" type="text">
+  										</div>
+									</div>
+
+									<!-- Textarea -->
+									<div class="form-group">
+  										<label class="col-sm-3 control-label" for="descripition">Description</label>
+  										<div class="col-lg-8">                     
+    										<textarea class="form-control" id="descripition" name="descripition" style="max-length: 50em;">Briefly describe you project here.</textarea>
+  										</div>
+									</div>
+
+									<!-- File Button --> 
+									<div class="form-group">
+ 										<label class="col-sm-3 control-label" for="recomend">Principal Recommendation Letter</label>
+  										<div class="col-lg-8">
+    										<input id="recomend" name="recomend" class="input-file" type="file">
+  										</div>
+									</div>
+
+									<!-- Button -->
+									<div class="form-group">
+				  						<label class="col-sm-3 control-label" for="submit"></label>
+  										<div class="col-lg-8">
+    										<button id="submit" name="submit" class="btn btn-primary">Submit</button>
+  										</div>
+									</div>
+
+									</fieldset>
+									</form>
+
 							</div>
 						</div>
 						<!-- Hide that thing -->
-						<!-- <div class="panel panel-info" id="donate">
+						<!--<div class="panel panel-info" id="donate">
 							<div class="panel-heading">
 								<h3 class="panel-title">
 									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Donate
 								</h3>
 							</div>
 							<div class="panel-body">
-								<form class="form-horizontal">
+								<p>Donate Here:</p>
+								<form class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="LU55UHE6CVCQU">
+									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+								</form>
+								<!--<form class="form-horizontal">
 								  <fieldset>
 									<div class="form-group">
 									  <label class="col-lg-2 control-label">Name</label>
@@ -151,7 +219,7 @@
 								</h3>
 							</div>
 							<div class="panel-body" id="content">
-								<form class="form-horizontal">
+								<form class="form-horizontal" action="//formspree.io/thenewtoneducationfoundation@gmail.com" method="POST">
 								  <fieldset>
 									<div class="form-group">
 									  <label for="inputEmail" class="col-lg-2 control-label">Email</label>
@@ -189,36 +257,19 @@
 							<h3 class="panel-title"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Upcoming Events</h3>
 						  </div>
 						  <div class="panel-body" id="events">
-								<!--<div class="well well-sm" style="border: 1px solid #3498db">
-								  <h4>
-								  <strong>Event</strong>	 
-								  </h4>
-								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus lacus vel est malesuada vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</div>
 								<div class="well well-sm"  style="border: 1px solid #3498db">
 								  <h4>
-								  <strong>Event</strong>	 
+								  <strong>Februrary 26th</strong>	 
 								  </h4>
-								  Donec purus dui, iaculis ut erat volutpat, rhoncus auctor ante. Mauris lectus nisl, vulputate et augue in, cursus rhoncus urna.
+								  Hats off to teachers day.
 								</div>
 								<div class="well well-sm"  style="border: 1px solid #3498db">
 							      <h4>
-								  <strong>Event</strong>	 
+								  <strong>March 26th</strong>	 
 								  </h4>
-								  Morbi leo nunc, venenatis et venenatis sed, ullamcorper ac arcu. Donec urna odio, sollicitudin vitae lectus id, pretium aliquam leo.
+								  NEF Pancake Stampede<br>
+									<a href="/doc/pancake.docx" onclick="alert('Please see the word document downloaded for more information.')">More Information</a>
 								</div>
-								<div class="well well-sm"  style="border: 1px solid #3498db">
-								  <h4>
-								  <strong>Event</strong>	 
-								  </h4>
-								  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris porttitor dui vitae justo posuere pulvinar facilisis faucibus sem
-								</div>
-								<div class="well well-sm"  style="border: 1px solid #3498db">
-								  <h4>
-								  <strong>Event</strong>	 
-								  </h4>
-								  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla purus, in varius ex.
-								</div>-->
 						  </div>
 						</div>
 						<a class="twitter-timeline" href="https://twitter.com/ReImagineNewton" data-widget-id="633812968384397312">Tweets by @ReImagineNewton</a>
@@ -229,16 +280,20 @@
 						  </div>
 						  <div class="panel-body">
 							<p>
-								<strong>Phone:</strong> 555-246-21599
-							</p>
-							<p>
-								<strong>Address:</strong> 123 Spring St.
-								  Covington, GA 30016
+								<strong>Address:</strong> The Newton Education Foundation
+								  P.O. Box 1586
+								  Covington, GA 30014
 							  </p>
 							  <p>
-								  <strong>Hours: </strong>Mon-Fri - 8:00-5:00
+									<strong>Email: </strong> <a syle="text-wrap: unrestricted" href="mailto:thenewtoneducationfoundation@gmail.com">thenewtoneducationfoundation@gmail.com</a>
 							  </p>
-						  </div>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"  id="donatelink">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="LU55UHE6CVCQU">
+									<input style="border: none; size: 200%" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -260,6 +315,7 @@
 		<footer>
 			<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 			<script src="/js/bootstrap.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.3/jquery.jcarousel.js"></script>
 			<script src="/js/site.js"></script>
 			<p class="design">Designed and developed by <em>The Web Technicians</em>.</p>
 		</footer>
